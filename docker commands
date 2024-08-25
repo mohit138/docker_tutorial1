@@ -1,0 +1,14 @@
+docker pull
+docker images
+docker ps
+docker network ls
+docker network create tmp-network
+docker run -p 3000:3001 -d -e ENVVAR=env --name mongoDb --network tmp-network mongoDb
+docker logs tre2dkgh3i2
+docker remove gfutyf1jgv
+docker-compose -f mongo.yaml up -d
+docker-compose -f mongo.yaml down
+docker build -t my-app:1.0 .
+docker run -d my-app:1.0
+docker exec -it ghvvfj3gv3j /bin/sh
+docker exec -it ghvvfj3gv3j /bin/bash
